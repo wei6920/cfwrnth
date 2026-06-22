@@ -6,10 +6,10 @@ WORKDIR /app
 
 COPY NOTICE.txt .
 
-RUN wget https://github.com/SagerNet/sing-box/releases/download/v1.10.1/sing-box-1.10.1-linux-amd64.tar.gz && \
-    tar -zxvf sing-box-1.10.1-linux-amd64.tar.gz && \
-    mv sing-box-1.10.1-linux-amd64/sing-box ./ && \
-    rm -rf sing-box-1.10.1-linux-amd64* \
+RUN wget https://github.com/SagerNet/sing-box/releases/download/v1.12.24/sing-box-1.12.24-linux-amd64.tar.gz && \
+    tar -zxvf sing-box-1.12.24-linux-amd64.tar.gz && \
+    mv sing-box-1.12.24-linux-amd64/sing-box ./ && \
+    rm -rf sing-box-1.12.24-linux-amd64* \
     && apk del wget tar
 
 COPY config.json .
